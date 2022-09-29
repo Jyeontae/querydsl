@@ -306,7 +306,6 @@ public class QuerydslBasicTest {
                 .from(member)
                 .leftJoin(team).on(member.username.eq(team.name))
                 .fetch();
-        }
     }
 
     @PersistenceUnit
